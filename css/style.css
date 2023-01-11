@@ -21,6 +21,14 @@ i {
   align-items: center;
   justify-content: center;
 }
+.top .max {
+  width: 100% !important;
+  height: 100% !important;
+}
+.top .mixminaze {
+  width: 38% !important;
+  height: 44% !important;
+}
 .top-container {
   width: 75%;
   height: 80%;
@@ -39,6 +47,9 @@ i {
 .top-container .header .video-name {
   color: white;
   font-size: 18px;
+}
+.top-container .videoo {
+  height: 80% !important;
 }
 .top-container .video-container {
   width: 100%;
@@ -101,6 +112,9 @@ i {
   align-items: center;
   justify-content: space-between;
   padding: 0px 9px 7px 9px;
+}
+.top-container .footer .min-left {
+  gap: 21px !important;
 }
 .top-container .footer-left {
   display: flex;

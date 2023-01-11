@@ -22,6 +22,15 @@ i {
   align-items: center;
   justify-content: center;
 
+  .max{
+  width: 100% !important;
+  height: 100% !important;
+  }
+  .mixminaze{
+  width: 38% !important;
+  height: 44% !important;
+  }
+
   &-container {
     width: 75%;
     height: 80%;
@@ -43,6 +52,10 @@ i {
       }
 
       .header-icon {}
+    }
+
+    .videoo{
+    height: 80% !important;
     }
 
     .video-container {
@@ -122,6 +135,10 @@ i {
       align-items: center;
       justify-content: space-between;
       padding: 0px 9px 7px 9px;
+
+      .min-left{
+        gap: 21px !important;
+      }
 
       &-left {
         display: flex;

@@ -86,7 +86,7 @@ video.addEventListener("timeupdate", () => { });
 
 let volume = document.querySelector(".ses");
 let saygac = 0;
-function vol  () {
+function vol() {
   if (saygac === 0) {
     video.volume = 0;
     ses.classList.add("fa-volume-off");
@@ -226,3 +226,59 @@ idare.addEventListener("mouseout", () => {
   zaman.classList.add("hidden");
   middle.classList.add("hidden");
 });
+
+
+const container = document.querySelector(".top-container")
+const max = document.querySelector(".fa-expand")
+let number = 0
+max.addEventListener("click", () => {
+
+  if (number === 0) {
+    container.classList.add('max');
+    number++
+    max.classList.remove('fa-expand');
+    max.classList.add('fa-compress');
+    container.classList.remove("mixminaze")
+    mixminaze.classList.remove('fa-up-right-from-square');
+    mixminaze.classList.add('fa-share-from-square');
+    videoContainer.classList.remove("videoo")
+
+  } else {
+    container.classList.remove('max');
+    number--
+    max.classList.remove('fa-compress');
+    max.classList.add('fa-expand');
+  }
+
+})
+
+const mixminaze =document.querySelector(".fa-share-from-square")
+const footerLeft =document.querySelector(".footer-left")
+const videoContainer=document.querySelector(".video-container")
+let mixnum=0
+mixminaze.addEventListener("click",()=>{
+if(mixnum===0){
+  mixminaze.classList.remove('fa-share-from-square');
+  mixminaze.classList.add('fa-up-right-from-square');
+  container.classList.add("mixminaze")
+  footerLeft.classList.add("min-left")
+  ireli.setAttribute("style","display:none")
+  geri.setAttribute("style","display:none")
+  max.classList.remove('fa-compress');
+    max.classList.add('fa-expand');
+    videoContainer.classList.add("videoo")
+  mixnum++
+}
+else{
+  mixminaze.classList.remove('fa-up-right-from-square');
+  mixminaze.classList.add('fa-share-from-square');
+  container.classList.remove("mixminaze")
+  footerLeft.classList.add("min-left")
+  ireli.setAttribute("style","display:")
+  geri.setAttribute("style","display:")
+  videoContainer.classList.remove("videoo")
+
+  mixnum--
+}
+
+})
