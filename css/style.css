@@ -58,6 +58,43 @@ i {
   margin: 5px 0;
   cursor: pointer;
 }
+.top-container .video-control .p {
+  width: 0%;
+  height: 100%;
+  background-color: #fe8daa;
+  border-radius: 5px;
+}
+.top-container .video-control .vaxtgosterici {
+  width: 0%;
+  height: auto;
+  background: none;
+  position: absolute;
+  top: 0;
+}
+.top-container .video-control .vaxtgosterici .zaman {
+  position: absolute;
+  top: -26px;
+  right: 20px;
+  width: 40px;
+  height: 25px;
+  text-align: center;
+  padding: 4px 0px 0px 0px;
+  color: yellow;
+  z-index: 1;
+}
+.top-container .video-control .vaxtgosterici .middle {
+  width: 80px;
+  height: 80px;
+  -o-object-fit: fill;
+  object-fit: fill;
+  position: absolute;
+  top: -81px;
+  right: 0px;
+  z-index: 0;
+}
+.top-container .video-control .vaxtgosterici .hidden {
+  display: none;
+}
 .top-container .footer {
   width: 100%;
   display: flex;

@@ -38,8 +38,8 @@ i {
       padding: 0px 6px 0px 6px;
 
       .video-name {
-      color: white;
-      font-size: 18px;
+        color: white;
+        font-size: 18px;
       }
 
       .header-icon {}
@@ -55,6 +55,7 @@ i {
         object-fit: fill;
 
       }
+
     }
 
     .video-control {
@@ -64,6 +65,54 @@ i {
       background: rgb(43, 31, 31);
       margin: 5px 0;
       cursor: pointer;
+
+
+      .p {
+        width: 0%;
+        height: 100%;
+        background-color: #fe8daa;
+        border-radius: 5px;
+        // transition: width 0.1s linear;
+      }
+
+      .vaxtgosterici {
+        width: 0%;
+        height: auto;
+        background: none;
+        // transition: width 0.1s linear;
+        position: absolute;
+        top: 0;
+
+        .zaman {
+          position: absolute;
+          top: -26px;
+          right: 20px;
+          width: 40px;
+          height: 25px;
+          text-align: center;
+          padding: 4px 0px 0px 0px;
+          color: yellow;
+          z-index: 1;
+        }
+
+        .middle {
+          width: 80px;
+          height: 80px;
+          -o-object-fit: fill;
+          object-fit: fill;
+          position: absolute;
+          top: -81px;
+          right: 0px;
+          z-index: 0;
+        }
+
+
+        .hidden{
+        display: none;
+        }
+      }
+
+
 
     }
 
