@@ -242,12 +242,16 @@ max.addEventListener("click", () => {
     mixminaze.classList.remove('fa-up-right-from-square');
     mixminaze.classList.add('fa-share-from-square');
     videoContainer.classList.remove("videoo")
+    ireli.setAttribute("style","display:")
+  geri.setAttribute("style","display:")
 
   } else {
     container.classList.remove('max');
     number--
     max.classList.remove('fa-compress');
     max.classList.add('fa-expand');
+    ireli.setAttribute("style","display:")
+  geri.setAttribute("style","display:")
   }
 
 })
