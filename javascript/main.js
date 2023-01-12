@@ -259,30 +259,40 @@ max.addEventListener("click", () => {
 const mixminaze =document.querySelector(".fa-share-from-square")
 const footerLeft =document.querySelector(".footer-left")
 const videoContainer=document.querySelector(".video-container")
-let mixnum=0
-mixminaze.addEventListener("click",()=>{
-if(mixnum===0){
-  mixminaze.classList.remove('fa-share-from-square');
-  mixminaze.classList.add('fa-up-right-from-square');
-  container.classList.add("mixminaze")
-  footerLeft.classList.add("min-left")
-  ireli.setAttribute("style","display:none")
-  geri.setAttribute("style","display:none")
-  max.classList.remove('fa-compress');
-    max.classList.add('fa-expand');
-    videoContainer.classList.add("videoo")
-  mixnum++
-}
-else{
-  mixminaze.classList.remove('fa-up-right-from-square');
-  mixminaze.classList.add('fa-share-from-square');
-  container.classList.remove("mixminaze")
-  footerLeft.classList.add("min-left")
-  ireli.setAttribute("style","display:")
-  geri.setAttribute("style","display:")
-  videoContainer.classList.remove("videoo")
+// let mixnum=0
+// mixminaze.addEventListener("click",()=>{
+// if(mixnum===0){
+//   mixminaze.classList.remove('fa-share-from-square');
+//   mixminaze.classList.add('fa-up-right-from-square');
+//   container.classList.add("mixminaze")
+//   footerLeft.classList.add("min-left")
+//   ireli.setAttribute("style","display:none")
+//   geri.setAttribute("style","display:none")
+//   max.classList.remove('fa-compress');
+//     max.classList.add('fa-expand');
+//     videoContainer.classList.add("videoo")
+//   mixnum++
+// }
+// else{
+//   mixminaze.classList.remove('fa-up-right-from-square');
+//   mixminaze.classList.add('fa-share-from-square');
+//   container.classList.remove("mixminaze")
+//   footerLeft.classList.add("min-left")
+//   ireli.setAttribute("style","display:")
+//   geri.setAttribute("style","display:")
+//   videoContainer.classList.remove("videoo")
 
-  mixnum--
-}
+//   mixnum--
+// }
 
-})
+// })
+
+mixminaze.addEventListener("click",togglePictureInPicture)
+
+function togglePictureInPicture() {
+  if (document.pictureInPictureElement) {
+    document.exitPictureInPicture();
+  } else if (document.pictureInPictureEnabled) {
+    video.requestPictureInPicture();
+  }
+}
